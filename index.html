@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Menstrual Heating Relief Belt | Premium Comfort</title>
+    <style>
+        /* --- Premium Fonts --- */
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary: #e83e6a;
+            --primary-light: #ff7b9c;
+            --primary-dark: #c22d54;
+            --primary-glow: rgba(232, 62, 106, 0.4);
+            --secondary: #fbc2c7;
+            --accent: #ffd1dc;
+            --dark: #1a1a2e;
+            --dark-soft: #2d2d44;
+            --light: #6b6b80;
+            --bg: #fdf7f8;
+            --bg-alt: #fff5f7;
+            --white: #ffffff;
+            --whatsapp: #25D366;
+            --facebook: #1877F2;
+            --glass: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.3);
+            --shadow-sm: 0 4px 15px rgba(232, 62, 106, 0.08);
+            --shadow: 0 10px 40px rgba(232, 62, 106, 0.12);
+            --shadow-lg: 0 25px 60px rgba(232, 62, 106, 0.18);
+            --shadow-hover: 0 30px 70px rgba(232, 62, 106, 0.25);
+            --transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --transition-fast: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Hind Siliguri', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg);
+            color: var(--dark);
+            overflow-x: hidden;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding-top: 80px;
+        }
+
+        /* ================= SCROLLBAR ================= */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, var(--primary), var(--primary-light));
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary-dark); }
+
+        /* ================= 1. LOGO SPLASH SCREEN ================= */
+        #logoScreen {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100vh;
+            background: linear-gradient(135deg, #e83e6a 0%, #ff7b9c 40%, #fbc2c7 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1), visibility 0.8s;
+        }
+
+        #logoScreen.hidden { opacity: 0; visibility: hidden; }
+
+        .logo-splash-content {
+            text-align: center;
+            color: white;
+            animation: zoomIn 1s cubic-bezier(0.25, 0.8, 0.25, 1);
+            background: rgba(255, 255, 255, 0.15);
+            padding: 50px 60px;
+            border-radius: 40px;
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+            max-width: 90%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-splash-content::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
+            animation: rotateGlow 6s linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes rotateGlow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .logo-splash-content img {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 25px;
+            animation: logoFloat 2.5s ease-in-out infinite;
+            filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.25));
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        .splash-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .splash-dots span {
+            width: 12px; height: 12px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            animation: dotBounce 1.2s infinite ease-in-out;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .splash-dots span:nth-child(1) { animation-delay: 0s; }
+        .splash-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .splash-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes dotBounce {
+            0%, 80%, 100% { transform: scale(0.7); opacity: 0.5; }
+            40% { transform: scale(1.2); opacity: 1; }
+        }
+
+        /* ================= 2. HEADER (লোগো + হোম বাটন) ================= */
+        .fixed-header {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1000;
+            box-shadow: 0 4px 25px rgba(232, 62, 106, 0.1);
+            border-bottom: 1px solid rgba(232, 62, 106, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        /* লোগো সেকশন */
+        .header-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid rgba(232, 62, 106, 0.06);
+        }
+
+        .header-top img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .header-top img:hover { transform: scale(1.05); }
+
+        /* হোম নেভিগেশন */
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 22px;
+            background: linear-gradient(135deg, rgba(232, 62, 106, 0.06), rgba(255, 123, 156, 0.06));
+            color: var(--primary);
+            border: 1px solid rgba(232, 62, 106, 0.15);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+
+        .nav-btn:hover {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px var(--primary-glow);
+            border-color: transparent;
+        }
+
+        .nav-btn.active {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 8px 20px var(--primary-glow);
+        }
+
+        .nav-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* ================= FLOATING SOCIAL BUTTONS ================= */
+        .floating-socials {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .social-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transition: var(--transition-fast);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .social-btn:hover {
+            transform: scale(1.15) translateX(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-btn.facebook {
+            background: linear-gradient(135deg, #1877F2, #42A5F5);
+        }
+
+        .social-btn.whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+
+        .social-btn svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        /* Tooltip */
+        .social-btn::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%) translateX(10px);
+            background: var(--dark);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition-fast);
+            font-family: 'Hind Siliguri', sans-serif;
+            font-weight: 500;
+        }
+
+        .social-btn::after {
+            content: '';
+            position: absolute;
+            right: 62px;
+            top: 50%;
+            transform: translateY(-50%) translateX(10px);
+            border: 6px solid transparent;
+            border-left-color: var(--dark);
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition-fast);
+        }
+
+        .social-btn:hover::before,
+        .social-btn:hover::after {
+            opacity: 1;
+            transform: translateY(-50%) translateX(0);
+        }
+
+        /* ================= 3. HERO SECTION ================= */
+        .hero-section {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            background: 
+                radial-gradient(circle at 10% 20%, rgba(232, 62, 106, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 123, 156, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(251, 194, 199, 0.04) 0%, transparent 60%);
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%; right: -20%;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(232, 62, 106, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: floatSlow 8s infinite ease-in-out;
+        }
+
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: -30%; left: -10%;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(255, 123, 156, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: floatSlow 10s infinite ease-in-out reverse;
+        }
+
+        .hero-badge {
+            background: linear-gradient(135deg, rgba(232, 62, 106, 0.08), rgba(255, 123, 156, 0.08));
+            color: var(--primary);
+            padding: 10px 28px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(232, 62, 106, 0.15);
+            animation: fadeInDown 1s ease;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--dark);
+            line-height: 1.15;
+            animation: fadeInDown 1s ease 0.2s both;
+            max-width: 900px;
+            position: relative;
+            z-index: 1;
+            letter-spacing: -0.5px;
+        }
+
+        .hero-title span {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--light);
+            margin-bottom: 45px;
+            max-width: 600px;
+            line-height: 1.8;
+            animation: fadeInDown 1s ease 0.4s both;
+            position: relative;
+            z-index: 1;
+            font-weight: 400;
+        }
+
+        /* ================= IMAGE SLIDER ================= */
+        .hero-image-container {
+            max-width: 750px;
+            width: 100%;
+            border-radius: 35px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            cursor: pointer;
+            transition: var(--transition);
+            border: 5px solid var(--white);
+            position: relative;
+            margin-bottom: 45px;
+            background: #f0f0f0;
+            animation: fadeInUp 1s ease 0.6s both;
+            z-index: 1;
+        }
+
+        .hero-image-container::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 30px;
+            box-shadow: inset 0 0 30px rgba(232, 62, 106, 0.05);
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .hero-image-container:hover {
+            transform: translateY(-18px) scale(1.02);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .slider-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slider-track {
+            display: flex;
+            transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+            will-change: transform;
+        }
+
+        .slide {
+            min-width: 100%;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .click-overlay {
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(232, 62, 106, 0.95) 0%, rgba(232, 62, 106, 0.7) 60%, transparent 100%);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 30px 20px 25px;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .click-overlay span {
+            background: var(--white);
+            color: var(--primary);
+            padding: 14px 35px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Hind Siliguri', sans-serif;
+            animation: pulseSoft 2.5s infinite;
+        }
+
+        @keyframes pulseSoft {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.04); }
+        }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 4;
+        }
+
+        .dot {
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: var(--transition-fast);
+            border: 2px solid transparent;
+        }
+
+        .dot.active {
+            background: var(--white);
+            width: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+        }
+
+        .slider-progress {
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 100%; height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            z-index: 5;
+        }
+
+        .slider-progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--white), var(--primary-light));
+            transition: width 0.1s linear;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        /* ================= BUTTON ================= */
+        .pulse-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            padding: 20px 55px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            border-radius: 60px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 18px 40px var(--primary-glow);
+            transition: var(--transition-fast);
+            border: none;
+            cursor: pointer;
+            animation: pulse 2.5s infinite;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            font-family: 'Hind Siliguri', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .pulse-btn::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: 0.6s;
+        }
+
+        .pulse-btn:hover::before { left: 100%; }
+
+        .pulse-btn:hover {
+            animation: none;
+            transform: translateY(-6px);
+            box-shadow: 0 25px 50px rgba(232, 62, 106, 0.5);
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+        }
+
+        .pulse-btn:active { transform: translateY(-2px); }
+
+        /* ================= MAIN INTERFACE ================= */
+        .main-interface {
+            display: none;
+            padding: 40px 20px 0;
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+        .main-interface.active {
+            display: block;
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        .main-interface .hero-image-container {
+            margin: 0 auto 50px;
+        }
+
+        .main-interface .hero-image-container:hover {
+            transform: translateY(-10px) scale(1.01);
+        }
+
+        /* ================= ORDER FORM ================= */
+        .order-box {
+            background: var(--white);
+            padding: 55px 50px;
+            border-radius: 30px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(232, 62, 106, 0.08);
+            max-width: 680px;
+            margin: 0 auto 70px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .order-box::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light), var(--primary));
+            background-size: 200% 100%;
+            animation: gradientMove 3s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .order-box-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--dark);
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .price-tag {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .price-tag .current {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--primary);
+            font-weight: 700;
+            display: block;
+            line-height: 1.1;
+            text-shadow: 0 4px 20px var(--primary-glow);
+        }
+
+        .price-tag .old {
+            font-size: 1.4rem;
+            color: #b0b0c0;
+            text-decoration: line-through;
+            margin-top: 8px;
+            display: inline-block;
+            font-weight: 400;
+        }
+
+        .price-tag .discount-badge {
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            font-family: 'Inter', sans-serif;
+            box-shadow: 0 8px 20px rgba(238, 90, 36, 0.3);
+            animation: badgePulse 2s infinite;
+        }
+
+        @keyframes badgePulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .form-group { margin-bottom: 28px; }
+
+        .form-group label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: var(--dark);
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 17px 22px;
+            border: 2px solid #eee;
+            border-radius: 14px;
+            font-size: 1rem;
+            outline: none;
+            transition: var(--transition-fast);
+            background: #fafafa;
+            font-family: 'Hind Siliguri', sans-serif;
+            color: var(--dark);
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--primary);
+            background: white;
+            box-shadow: 0 0 0 6px rgba(232, 62, 106, 0.06);
+            transform: translateY(-2px);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder { color: #b0b0c0; }
+
+        .qty-selector {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: #fafafa;
+            padding: 8px;
+            border-radius: 14px;
+            border: 2px solid #eee;
+            width: fit-content;
+        }
+
+        .qty-btn {
+            width: 48px; height: 48px;
+            border-radius: 12px;
+            border: none;
+            background: white;
+            font-size: 1.4rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: var(--transition-fast);
+            color: var(--primary);
+            font-weight: bold;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .qty-btn:hover {
+            background: var(--primary);
+            color: white;
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px var(--primary-glow);
+        }
+
+        .qty-btn:active { transform: scale(0.95); }
+
+        .qty-input {
+            width: 70px !important;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.3rem !important;
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            transform: none !important;
+            padding: 0 !important;
+            color: var(--dark);
+        }
+
+        .qty-input:focus { box-shadow: none !important; }
+
+        .total-price-box {
+            background: linear-gradient(135deg, rgba(232, 62, 106, 0.04), rgba(255, 123, 156, 0.04));
+            padding: 25px;
+            border-radius: 18px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 35px 0;
+            border: 2px dashed rgba(232, 62, 106, 0.25);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition-fast);
+        }
+
+        .total-price-box:hover {
+            border-color: rgba(232, 62, 106, 0.5);
+            background: linear-gradient(135deg, rgba(232, 62, 106, 0.06), rgba(255, 123, 156, 0.06));
+        }
+
+        .total-price-box span:first-child {
+            font-size: 1.1rem;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .btn-whatsapp {
+            width: 100%;
+            padding: 22px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            border: none;
+            border-radius: 16px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 18px 40px var(--primary-glow);
+            position: relative;
+            overflow: hidden;
+            font-family: 'Hind Siliguri', sans-serif;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-whatsapp::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: 0.6s;
+        }
+
+        .btn-whatsapp:hover::after { left: 100%; }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(232, 62, 106, 0.5);
+        }
+
+        .btn-whatsapp:active { transform: translateY(-2px); }
+
+        /* ================= FEATURES SECTION ================= */
+        .features-section {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 40px 20px 90px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--dark);
+            margin-bottom: 15px;
+            position: relative;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 90px; height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            margin: 18px auto 0;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px var(--primary-glow);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--light);
+            margin-bottom: 55px;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(232, 62, 106, 0.06);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--primary-light));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .feature-card:hover::before { transform: scaleX(1); }
+
+        .feature-card:hover {
+            transform: translateY(-12px);
+            box-shadow: var(--shadow-hover);
+            border-color: rgba(232, 62, 106, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 2.8rem;
+            margin-bottom: 22px;
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(232, 62, 106, 0.08), rgba(255, 123, 156, 0.08));
+            width: 85px; height: 85px;
+            line-height: 85px;
+            border-radius: 50%;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .feature-card:hover .feature-icon {
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            transform: rotateY(180deg);
+            box-shadow: 0 10px 25px var(--primary-glow);
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 14px;
+            color: var(--dark);
+            font-weight: 600;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.3px;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: var(--light);
+            line-height: 1.8;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background: linear-gradient(135deg, var(--dark), var(--dark-soft));
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 45px 20px;
+            font-size: 0.9rem;
+            margin-top: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        }
+
+        footer p:first-child {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: white;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* ================= ANIMATIONS ================= */
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(232, 62, 106, 0.5); }
+            70% { box-shadow: 0 0 0 25px rgba(232, 62, 106, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(232, 62, 106, 0); }
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.7); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, -30px) scale(1.05); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-35px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(35px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 992px) {
+            .hero-title { font-size: 2.8rem; }
+            .section-title { font-size: 2.3rem; }
+        }
+
+        @media (max-width: 768px) {
+            body { padding-top: 75px; }
+            .header-top img { height: 42px; }
+            .nav-bar { gap: 6px; padding: 8px 10px; }
+            .nav-btn { padding: 8px 18px; font-size: 0.85rem; }
+            .nav-btn svg { width: 14px; height: 14px; }
+            .hero-title { font-size: 2.1rem; }
+            .hero-subtitle { font-size: 1rem; padding: 0 10px; }
+            .order-box { padding: 35px 22px; }
+            .section-title { font-size: 1.9rem; }
+            .price-tag .current { font-size: 2.5rem; }
+            .total-price-box { flex-direction: column; gap: 10px; font-size: 1.3rem; }
+            .click-overlay { padding: 20px 15px 18px; }
+            .click-overlay span { padding: 12px 24px; font-size: 0.9rem; }
+            .features-grid { grid-template-columns: 1fr; }
+            .pulse-btn { padding: 18px 38px; font-size: 1rem; }
+            .hero-image-container { border-radius: 25px; border-width: 4px; }
+            .price-tag .discount-badge { right: 0; }
+            .feature-card { padding: 32px 22px; }
+            .slider-dots { bottom: 85px; }
+            .main-interface { padding: 25px 15px 0; }
+            .order-box-title { font-size: 1.6rem; }
+            .floating-socials { right: 12px; gap: 12px; }
+            .social-btn { width: 48px; height: 48px; }
+            .social-btn svg { width: 24px; height: 24px; }
+            .social-btn::before { display: none; }
+            .social-btn::after { display: none; }
+        }
+
+        @media (max-width: 480px) {
+            body { padding-top: 70px; }
+            .header-top { padding: 8px 15px; }
+            .header-top img { height: 38px; }
+            .nav-bar { gap: 5px; padding: 7px 8px; }
+            .nav-btn { padding: 7px 14px; font-size: 0.8rem; gap: 5px; }
+            .nav-btn svg { width: 12px; height: 12px; }
+            .hero-title { font-size: 1.7rem; }
+            .hero-badge { font-size: 0.75rem; padding: 8px 18px; letter-spacing: 2px; }
+            .section-title { font-size: 1.6rem; }
+            .section-title::after { width: 60px; }
+            .order-box { padding: 28px 16px; border-radius: 22px; }
+            .price-tag .current { font-size: 2.1rem; }
+            .qty-btn { width: 42px; height: 42px; font-size: 1.2rem; }
+            .btn-whatsapp { font-size: 1rem; padding: 18px; }
+            .form-group input, .form-group textarea { padding: 14px 18px; font-size: 0.95rem; }
+            footer { padding: 35px 15px; }
+            footer p:first-child { font-size: 1.2rem; }
+            .click-overlay span { padding: 10px 20px; font-size: 0.8rem; }
+            .slider-dots { bottom: 75px; gap: 7px; }
+            .dot { width: 8px; height: 8px; }
+            .dot.active { width: 24px; }
+            .order-box-title { font-size: 1.4rem; }
+            .social-btn { width: 44px; height: 44px; }
+            .social-btn svg { width: 22px; height: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= 1. LOGO SPLASH SCREEN ================= -->
+    <div id="logoScreen">
+        <div class="logo-splash-content">
+            <img src="https://i.postimg.cc/PJbtq71W/1789568434228-edit-42798231749557.png" alt="Smart Belt Logo">
+            <div class="splash-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= 2. HEADER (লোগো + হোম বাটন) ================= -->
+    <header class="fixed-header">
+        <!-- লোগো -->
+        <div class="header-top">
+            <img src="https://i.postimg.cc/PJbtq71W/1789568434228-edit-42798231749557.png" alt="Smart Belt Logo">
+        </div>
+        
+        <!-- হোম নেভিগেশন -->
+        <nav class="nav-bar">
+            <button class="nav-btn active" id="navHome" onclick="showHome()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                হোম
+            </button>
+        </nav>
+    </header>
+
+    <!-- ================= FLOATING SOCIAL BUTTONS ================= -->
+    <div class="floating-socials">
+        <a href="https://www.facebook.com/share/1C352LeqSf/" target="_blank" class="social-btn facebook" data-tooltip="Facebook পেজ">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://wa.me/8801619481882" target="_blank" class="social-btn whatsapp" data-tooltip="WhatsApp এ অর্ডার">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+    </div>
+
+    <!-- ================= 3. HERO SECTION (প্রথম পেজ) ================= -->
+    <section class="hero-section" id="heroSection">
+        <div class="hero-badge">✦ BEST SELLER ✦</div>
+        <h1 class="hero-title">Smart Menstrual <span>Heating Relief</span> Belt</h1>
+        <p class="hero-subtitle">Say goodbye to period pain and discomfort! Experience fast, soothing, and drug-free relief with our advanced heating belt.</p>
+        
+        <!-- Product Image Slider -->
+        <div class="hero-image-container" id="mainImageTrigger">
+            <div class="slider-wrapper">
+                <div class="slider-track" id="sliderTrackHero">
+                    
+                    <div class="slide">
+                        <img src="https://i.postimg.cc/NjcgWQqx/main-image.webp" alt="Smart Menstrual Heating Relief Belt - Main">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="https://i.postimg.cc/g2YCVjPP/zp-RTo7gen7o-VZNSZg-AVgqfswz-XJa-Gqar-WTJ8X1kr.jpg" alt="Smart Menstrual Heating Relief Belt - 2">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="https://i.postimg.cc/PrH9HJJw/534d1e1e0e37386b7ca99aaa4b3b151a.jpg" alt="Smart Menstrual Heating Relief Belt - 3">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="https://i.postimg.cc/527R8m32/Screenshot-20260909-021555-com-daraz-android-Laz-Detail-Activity-edit-41925046813745.jpg" alt="Smart Menstrual Heating Relief Belt - 4">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="slider-dots" id="sliderDotsHero">
+                <div class="dot active" data-index="0"></div>
+                <div class="dot" data-index="1"></div>
+                <div class="dot" data-index="2"></div>
+                <div class="dot" data-index="3"></div>
+            </div>
+
+            <div class="slider-progress">
+                <div class="slider-progress-bar" id="progressBarHero"></div>
+            </div>
+            
+            <div class="click-overlay">
+                <span>👆 অর্ডার করতে ক্লিক করুন</span>
+            </div>
+        </div>
+
+        <button class="pulse-btn" id="heroBtn">
+            🛒 অর্ডার করতে এখানে ক্লিক করুন
+        </button>
+    </section>
+
+    <!-- ================= 4. MAIN INTERFACE (অর্ডার পেজ) ================= -->
+    <div class="main-interface" id="mainInterface">
+        
+        <!-- মেইন স্লাইডার -->
+        <div class="hero-image-container">
+            <div class="slider-wrapper">
+                <div class="slider-track" id="sliderTrackMain">
+                    
+                    <div class="slide">
+                        <img src="https://i.postimg.cc/NjcgWQqx/main-image.webp" alt="Smart Menstrual Heating Relief Belt - Main">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="https://i.postimg.cc/g2YCVjPP/zp-RTo7gen7o-VZNSZg-AVgqfswz-XJa-Gqar-WTJ8X1kr.jpg" alt="Smart Menstrual Heating Relief Belt - 2">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="https://i.postimg.cc/PrH9HJJw/534d1e1e0e37386b7ca99aaa4b3b151a.jpg" alt="Smart Menstrual Heating Relief Belt - 3">
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="https://i.postimg.cc/527R8m32/Screenshot-20260909-021555-com-daraz-android-Laz-Detail-Activity-edit-41925046813745.jpg" alt="Smart Menstrual Heating Relief Belt - 4">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="slider-dots" id="sliderDotsMain">
+                <div class="dot active" data-index="0"></div>
+                <div class="dot" data-index="1"></div>
+                <div class="dot" data-index="2"></div>
+                <div class="dot" data-index="3"></div>
+            </div>
+
+            <div class="slider-progress">
+                <div class="slider-progress-bar" id="progressBarMain"></div>
+            </div>
+        </div>
+
+        <!-- অর্ডার ফর্ম -->
+        <div class="order-box">
+            <h2 class="order-box-title">🛒 অর্ডার ফর্ম</h2>
+            
+            <div class="price-tag">
+                <span class="discount-badge">40% OFF</span>
+                <span class="current">৳ ১৪৯৯</span>
+                <span class="old">৳ ২৫০০</span>
+            </div>
+
+            <form id="orderForm">
+                <div class="form-group">
+                    <label>👤 আপনার নাম (Your Name)</label>
+                    <input type="text" id="name" placeholder="আপনার নাম লিখুন" required>
+                </div>
+                <div class="form-group">
+                    <label>📞 মোবাইল নম্বর (Phone Number)</label>
+                    <input type="tel" id="phone" placeholder="01XXXXXXXXX" required>
+                </div>
+                <div class="form-group">
+                    <label>📍 সম্পূর্ণ ঠিকানা (Full Address)</label>
+                    <textarea id="address" rows="3" placeholder="গ্রাম/বাসা, রোড, থানা, জেলা" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>📦 পরিমাণ (Quantity)</label>
+                    <div class="qty-selector">
+                        <button type="button" class="qty-btn" onclick="changeQty(-1)">−</button>
+                        <input type="number" id="quantity" class="qty-input" value="1" min="1" readonly>
+                        <button type="button" class="qty-btn" onclick="changeQty(1)">+</button>
+                    </div>
+                </div>
+
+                <div class="total-price-box">
+                    <span>মোট মূল্য:</span>
+                    <span id="totalPriceDisplay">৳ ১৪৯৯</span>
+                </div>
+
+                <button type="submit" class="btn-whatsapp">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Confirm Order via WhatsApp
+                </button>
+            </form>
+        </div>
+
+        <!-- ফিচার সেকশন -->
+        <section class="features-section">
+            <h2 class="section-title">Key Features & Benefits</h2>
+            <p class="section-subtitle">কেন এই প্রোডাক্টটি আপনার প্রয়োজন?</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h3>Rapid & Even Heating</h3>
+                    <p>MCH heating technology provides fast warmth within seconds, effectively soothing lower back pain and menstrual cramps.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Customizable Modes</h3>
+                    <p>Features multiple adjustable temperature levels and massage modes to suit your personal comfort needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Safe & Intelligent</h3>
+                    <p>Built-in NTC temperature control sensor prevents overheating, ensuring a safe and comfortable experience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔋</div>
+                    <h3>Wireless & Portable</h3>
+                    <p>Lightweight, ultra-thin, and cordless design lets you wear it discreetly under your clothes anywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>USB Rechargeable</h3>
+                    <p>Comes with a built-in high-capacity rechargeable battery for long-lasting use anywhere, anytime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌸</div>
+                    <h3>Skin-Friendly Material</h3>
+                    <p>Made with breathable, soft-touch fabric that fits comfortably around your waist without irritation.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Smart Belt</p>
+        <p>&copy; 2024 Smart Belt. All Rights Reserved. | Premium Comfort for Modern Women</p>
+    </footer>
+
+    <!-- ================= JAVASCRIPT LOGIC ================= -->
+    <script>
+        // ================= 1. LOGO SPLASH SCREEN LOGIC =================
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const logoScreen = document.getElementById('logoScreen');
+                logoScreen.classList.add('hidden');
+                setTimeout(() => {
+                    startSlider('hero');
+                }, 400);
+            }, 1500);
+        });
+
+        // ================= 2. SLIDER FACTORY =================
+        const slideDuration = 2000;
+
+        function createSlider(trackId, dotsId, progressId) {
+            const track = document.getElementById(trackId);
+            const dots = document.querySelectorAll(`#${dotsId} .dot`);
+            const progressBar = document.getElementById(progressId);
+            const slides = track.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+
+            let currentSlide = 0;
+            let autoPlayInterval = null;
+            let progressInterval = null;
+            let isPlaying = false;
+
+            function goToSlide(index) {
+                currentSlide = index;
+                track.style.transform = `translateX(-${currentSlide * 100}%)`;
+                
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === currentSlide);
+                });
+            }
+
+            function updateProgress() {
+                const startTime = Date.now();
+                
+                if (progressInterval) clearInterval(progressInterval);
+                progressBar.style.width = '0%';
+                
+                progressInterval = setInterval(() => {
+                    const elapsed = Date.now() - startTime;
+                    const progress = Math.min((elapsed / slideDuration) * 100, 100);
+                    progressBar.style.width = progress + '%';
+                    
+                    if (progress >= 100) {
+                        clearInterval(progressInterval);
+                    }
+                }, 30);
+            }
+
+            function start() {
+                if (isPlaying) return;
+                isPlaying = true;
+                updateProgress();
+                
+                autoPlayInterval = setInterval(() => {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    goToSlide(currentSlide);
+                    updateProgress();
+                }, slideDuration);
+            }
+
+            function stop() {
+                if (autoPlayInterval) {
+                    clearInterval(autoPlayInterval);
+                    autoPlayInterval = null;
+                }
+                if (progressInterval) {
+                    clearInterval(progressInterval);
+                    progressInterval = null;
+                }
+                isPlaying = false;
+                progressBar.style.width = '0%';
+            }
+
+            dots.forEach(dot => {
+                dot.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const index = parseInt(dot.dataset.index);
+                    goToSlide(index);
+                    
+                    if (isPlaying) {
+                        stop();
+                        start();
+                    }
+                });
+            });
+
+            return { start, stop, goToSlide, get isPlaying() { return isPlaying; } };
+        }
+
+        let heroSlider = null;
+        let mainSlider = null;
+
+        function startSlider(type) {
+            if (type === 'hero' && !heroSlider) {
+                heroSlider = createSlider('sliderTrackHero', 'sliderDotsHero', 'progressBarHero');
+                heroSlider.start();
+            }
+            if (type === 'main' && !mainSlider) {
+                mainSlider = createSlider('sliderTrackMain', 'sliderDotsMain', 'progressBarMain');
+                mainSlider.start();
+            }
+        }
+
+        // ================= 3. NAVIGATION LOGIC =================
+        const heroSection = document.getElementById('heroSection');
+        const mainInterface = document.getElementById('mainInterface');
+        const navHome = document.getElementById('navHome');
+        
+        let isRevealed = false;
+
+        // হোম বাটনে ক্লিক করলে
+        function showHome() {
+            mainInterface.classList.remove('active');
+            
+            if (isRevealed) {
+                // মেইন ইন্টারফেস দেখাও
+                mainInterface.classList.add('active');
+                if (mainSlider) mainSlider.start();
+            } else {
+                // হিরো সেকশন দেখাও
+                heroSection.style.display = 'flex';
+                if (heroSlider) heroSlider.start();
+            }
+            
+            navHome.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // ছবিতে/বাটনে ক্লিক করলে মেইন ইন্টারফেস
+        function revealMainInterface() {
+            if (isRevealed) return;
+            isRevealed = true;
+
+            if (heroSlider) heroSlider.stop();
+            heroSection.style.display = 'none';
+            
+            mainInterface.classList.add('active');
+
+            setTimeout(() => {
+                startSlider('main');
+            }, 300);
+
+            navHome.classList.add('active');
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.getElementById('mainImageTrigger').addEventListener('click', revealMainInterface);
+        document.getElementById('heroBtn').addEventListener('click', revealMainInterface);
+
+        // ================= 4. ORDER FORM LOGIC =================
+        const quantityInput = document.getElementById('quantity');
+        const totalPriceDisplay = document.getElementById('totalPriceDisplay');
+        const basePrice = 1499;
+
+        function changeQty(amount) {
+            let currentQty = parseInt(quantityInput.value);
+            let newQty = currentQty + amount;
+            
+            if (newQty < 1) newQty = 1;
+            if (newQty > 10) newQty = 10;
+
+            quantityInput.value = newQty;
+            totalPriceDisplay.innerText = '৳ ' + (newQty * basePrice);
+        }
+
+        // ================= 5. WHATSAPP ORDER SUBMIT =================
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            const qty = quantityInput.value;
+            const total = totalPriceDisplay.innerText;
+
+            const whatsappNumber = '8801619481882';
+
+            const message = `আসসালামু আলাইকুম, আমি এই প্রোডাক্টটি অর্ডার করতে চাই।%0A%0A` +
+                            `*প্রোডাক্ট:* Smart Menstrual Heating Relief Belt%0A` +
+                            `*নাম:* ${name}%0A` +
+                            `*মোবাইল:* ${phone}%0A` +
+                            `*ঠিকানা:* ${address}%0A` +
+                            `*পরিমাণ:* ${qty} টি%0A` +
+                            `*মোট মূল্য:* ${total}%0A%0A` +
+                            `দয়া করে আমার অর্ডারটি কনফার্ম করুন।`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+</body>
+</html>
